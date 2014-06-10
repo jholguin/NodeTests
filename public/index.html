@@ -1,0 +1,14 @@
+<html>
+<head>
+	<script src="http://10.10.64.179/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		var socket = io.connect('http://10.10.64.179');
+
+		socket.on('welcome', function(data){
+			document.write('<h1>' + data.message + '</h1>');
+		});
+	</script>
+</head>
+<body>
+</body>
+</html>
